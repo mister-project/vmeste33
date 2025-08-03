@@ -1,0 +1,74 @@
+.reports-accordion {
+  margin-bottom: 20px;
+}
+
+.year-section {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  margin-bottom: 5px;
+  border-radius: 4px;
+}
+
+.year-button {
+  width: 400px;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #e0e0e0;
+  transition: background-color 0.3s;
+  text-align: left;
+}
+.year-button {
+  padding: 15px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #e0e0e0;
+  transition: background-color 0.3s;
+}
+
+.year-button:hover {
+  background-color: #d0d0d0;
+}
+
+.year-content {
+  display: none;
+  padding: 15px;
+}
+
+.year-content.active {
+  display: block;
+}
+
+.months-section {
+  margin-bottom: 15px;
+}
+
+.months-section h2 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #333;
+  text-align: left;
+}
+
+.report-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.report-items li {
+  margin-bottom: 8px;
+}
+
+.documents__flex-item {
+  text-decoration: none;
+  color: #0066cc;
+  font-size: 14px;
+}
+
+.documents__flex-item:hover {
+  text-decoration: underline;
+  color: #003366;
+}

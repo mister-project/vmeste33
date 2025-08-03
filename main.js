@@ -1,4 +1,4 @@
-console.log("СЃРєСЂРёРїС‚ РІ СЂР°Р±РѕС‚Рµ");
+console.log("main.js в работе");
 const burgerMenu = document.querySelector(".burger-menu");
 const burgerButton = document.querySelector(".burger-button");
 
