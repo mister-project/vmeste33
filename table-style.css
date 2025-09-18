@@ -1,0 +1,71 @@
+/* Стили для таблицы */
+.table-container {
+    /* Включаем горизонтальную прокрутку для таблицы на мобильных устройствах */
+    overflow-x: auto;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Основные стили таблицы */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Убираем двойные границы */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Стили для заголовков таблицы */
+th {
+    background-color: #f2f2f2; /* Светлый фон для заголовков */
+    font-weight: bold;
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd; /* Граница для ячеек */
+}
+
+/* Стили для ячеек таблицы */
+td {
+    padding: 10px;
+    border: 1px solid #ddd; /* Граница для ячеек */
+}
+
+/* Установка пропорций столбцов */
+th:nth-child(1), td:nth-child(1) {
+    width: 10%; /* Первый столбец */
+}
+th:nth-child(2), td:nth-child(2) {
+    width: 10%; /* Второй столбец */
+}
+th:nth-child(3), td:nth-child(3) {
+    width: 30%; /* Третий столбец */
+}
+th:nth-child(4), td:nth-child(4) {
+    width: 50%; /* Четвертый столбец */
+}
+
+/* Адаптивность для мобильных устройств (экраны меньше 768px) */
+@media screen and (max-width: 768px) {
+    table {
+        min-width: 600px; /* Минимальная ширина таблицы для предотвращения сжатия */
+    }
+
+    th, td {
+        font-size: 14px; /* Уменьшаем размер шрифта для мобильных */
+        padding: 8px; /* Уменьшаем отступы */
+    }
+
+    /* Убедимся, что таблица не выходит за пределы контейнера */
+    .table-container {
+        -webkit-overflow-scrolling: touch; /* Плавная прокрутка на iOS */
+    }
+}
+
+/* Стили для улучшения читаемости */
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Чередование фона для строк */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Подсветка строки при наведении */
+}
